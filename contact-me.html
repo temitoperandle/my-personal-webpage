@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <p>21 Ayinde street ojota lagos Nigeria</p> 
+    <p>+44 7930 910964</p>
+    <a href="https://mail.google.com/mail/u/0/#inbox"><p>temitoperandle@gmail.com</p></a>
+    <hr>
+    <form action="mailto:temitoperandle@gmail.com" method="post" enctype="text/plain">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+        <label for="phone number">Phone Number:</label>
+        <input type="text" name="phone number" required pattern="[0-9]{11}" title="Please enter a 11-digit phone number"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male <br>
+        <input type="radio" name="gender" value="Female" required> Female <br>
+        <input type="radio" name="gender" value=" Prefer not to say" required> Prefer not to say<br>
+        <label for="list">Do you want to sign up for the email list?</label><br>
+        <input type="radio" name="list" value="Yes" id="yesList" required> <label for="yesList">Yes</label><br>
+        <input type="radio" name="list" value="No" id="noList"> <label for="noList">No</label><br>
+
+        <label for="courses">Favourite Course:</label><br>
+        <select name="courses" id="mycourses" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Node JS">Node JS</option>
+            <option value="React JS">React JS</option>
+        </select><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" required placeholder="Enter your messages here"></textarea><br>
+        <button type="submit">Submit</button><br>
+        <a href="index.html">Go back to home</a>
+    </form>
+</body>
+</html>
